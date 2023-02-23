@@ -15,11 +15,11 @@ export default function handler(
 	// // Block access to this route if no API key is provided
 	// if(!req.query.key) return res.status(404).json({ message: 'No API key provided.' });
 
-	// Block access to this route if the wrong API key is provided
-	if(process.env.LUMBERJACK_API_KEY && req.query.key !== process.env.LUMBERJACK_API_KEY) return res.status(404).json({ message: 'Wrong API key provided.' });
+	// // Block access to this route if the wrong API key is provided
+	// if(process.env.LUMBERJACK_API_KEY && req.query.key !== process.env.LUMBERJACK_API_KEY) return res.status(404).json({ message: 'Wrong API key provided.' });
 
-	// Block access to this route if no message is provided
-	if(!req.query.message) return res.status(404).json({ message: 'No message provided.' });
+	// // Block access to this route if no message is provided
+	// if(!req.query.message) return res.status(404).json({ message: 'No message provided.' });
 
 	// Create a new date object
 	const date = new Date();
