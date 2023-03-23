@@ -32,9 +32,9 @@ export default function handler(
 		console.log(`------------------`);
 
 		// Supply all available data
-		if (headers) console.log(date.toDateString(), `>>> Headers: ${headers}`);
-		if (referrer) console.log(date.toDateString(), `>>> Referrer: ${referrer}`);
-		if (reqPath) console.log(date.toDateString(), `>>> Path: ${reqPath}`);
+		if (!!headers) console.log(date.toDateString(), `>>> Headers: ${headers}`);
+		if (!!referrer) console.log(date.toDateString(), `>>> Referrer: ${referrer}`);
+		if (!!reqPath) console.log(date.toDateString(), `>>> Path: ${reqPath}`);
 
 		// Log the date and message
 		console.log(date.toDateString())
